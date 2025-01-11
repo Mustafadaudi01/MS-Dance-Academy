@@ -1,0 +1,38 @@
+extends base.pug
+
+block style
+      link(rel="stylesheet", href="../static/css/style.css")
+
+block content
+  section.main-section
+    div WELCOME TO MS DANCE ACADEMY 
+    div#small EAT SLEEP DANCE REPEAT
+    div#ex-small At MS Dance Academy, we offer a wide variety of dance classes tailored to all ages and skill levels. Whether you’re a beginner or a seasoned dancer, we have something for everyone!
+    #search-container 
+      input(type="text" placeholder="search...")
+      button search 
+
+  section.our-mission
+    h2 OUR MISSION
+    div.cards
+      h3 Perfection
+      .card-content
+        img(src="/static/images/img2.png", alt="error", srcset="")
+        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati optio consectetur, similique, maxime adipisci ullam, hic nesciunt harum ex voluptate sequi? Eveniet mollitia deserunt et?
+    div.cards
+      h3 Discipline
+      .card-content
+        img(src="/static/images/img4.png", alt="", srcset="")
+        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime sed eligendi adipisci sint! Numquam ut reiciendis ducimus tempora totam perspiciatis dicta!
+    div.cards
+      h3 Consistency
+      .card-content
+        img(src="/static/images/img5.png", alt="", srcset="")
+        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo tempore quas modi laborum, accusantium commodi deserunt voluptatem quasi in dolores? Nesciunt, unde officia.
+
+  section.sponsor-section
+    h3 OUR SPONSORS
+    div
+      img(src="/static/images/instagram.png", alt="", srcset="")
+      img(src="/static/images/twitter.png", alt="", srcset="")
+      img(src="/static/images/watsapp.png", alt="", srcset="")

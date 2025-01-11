@@ -1,0 +1,20 @@
+extends base.pug
+
+block style
+      link(rel="stylesheet", href="../static/css/style.css")
+      link(rel="stylesheet", href="../static/css/signup.css")
+
+block content
+  h2 Sign Up Page
+    section.container
+      #logo-login
+        img(src="/static/images/mainlogo.png", alt="Main Logo")
+      form(action="/signup", method="POST")
+        div
+          input(type="text", id="username", name="name" class="input" placeholder="Create a username" required)
+        div
+          input(type="password", id="password", name="password" class="input" placeholder="Create a password" required)
+        div
+          input(type="email", id="email", name="email" class="input" placeholder="Enter your email" required)
+        div
+          button(type="submit", class="btn") Sign Up

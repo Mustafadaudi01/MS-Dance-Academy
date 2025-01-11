@@ -1,0 +1,21 @@
+extends base.pug
+
+block style
+    style
+        include ../static/css/contact.css
+        include ../static/css/style.css
+  
+block content 
+  section.form 
+    h1 CONTACT US
+    form(action="/contact", method="post", class="myform") 
+      input(type="text" name="name" class="input" placeholder="Enter your name")
+      input(type="number" name="age" class="input" placeholder="Enter your age")
+      input(type="number" name="height" class="input" placeholder="Enter your height")
+      input(type="email" name="email" class="input" placeholder="Enter your e-mail address")
+      input(type="text" name="phone" class="input" placeholder="Enter your phone number")
+      textarea(name="textarea" class="textarea" cols="20" rows="10" placeholder="Enter something about yourself")
+      button(class="btn")
+        |submit
+block scripts 
+  script(src="static/js/contact.js")

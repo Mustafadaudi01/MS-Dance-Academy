@@ -1,0 +1,37 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.input{
+    width: 50%;
+    margin: 5px;
+    padding: 7px;
+    border-radius: 8px;
+    border: 1px solid black
+}
+.myform{
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+#logo-login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0 0px 10px;
+}
+
+#logo-login img {
+    height: 60px;
+    width: 60px;
+    border-radius: 30px;
+}
+.btn{
+    margin: 7px 7px 30px 7px;
+    padding: 5px;
+    font-size: 15px;
+    border-radius: 5px;
+    width: 50%;
+}

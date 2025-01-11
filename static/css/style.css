@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: black;
+    color: white;
+    padding: 8px;
+}
+
+.btns {
+    position: absolute;
+    right: 40px;
+    top: 15px;
+
+}
+
+.btns li {
+    padding: 5px;
+    font-size: 20px;
+    list-style: none;
+    margin: 5px;
+}
+
+.btns ul li a {
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+}
+
+.btns ul {
+    display: flex;
+}
+
+.btns ul li:hover {
+    background-color: gray;
+    border-radius: 8px;  
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 0 0px 10px;
+}
+
+#logo img {
+    height: 60px;
+    width: 60px;
+    border-radius: 30px;
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar ul li {
+    list-style: none;
+    padding: 19px 25px;
+    font-size: 18px;
+
+}
+
+.navbar ul li a:hover {
+    background-color: white;
+    color: #003049;
+    border-radius: 8px;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+}
+
+.main-section {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    font-size: 50px;
+    font-weight: bold;
+    color: black;
+    text-shadow: 2px 2px white;
+    overflow: hidden;
+}
+
+#search-container {
+    display: block;
+    margin: 0 auto;
+}
+
+#search-container input {
+
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 20px;
+
+}
+
+#search-container button {
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.main-section div {
+    margin-top: 70px;
+}
+
+#ex-small {
+    font-size: 20px;
+    text-align: center;
+    padding: 0 80px;
+    margin: 15px 100px;
+    overflow-wrap: break-word;
+}
+
+.main-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80%;
+    background: url(../images/bg1.jpeg.jpg)no-repeat center/cover;
+    z-index: -1;
+    /* Ensure it appears behind the text */
+    border-radius: 10px;
+    /* Optional: add rounded corners */
+    opacity: 0.7;
+    overflow: hidden;
+}
+
+#small {
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+
+.our-mission {
+    height: 400px;
+    background-color: white;
+    margin: 40px 0;
+
+
+}
+
+.our-mission h2 {
+    font-size: 36px;
+    font-family: 'Yeon Sung';
+    text-align: center;
+    padding-top: 12px;
+    margin-bottom: 20px;
+}
+
+
+.cards {
+    /* border: 2px solid black; */
+    border-radius: 10px;
+    width: 30%;
+    display: inline-block;
+    margin: 23px 20px;
+    height: 270px;
+    background-color: white;
+}
+
+.cards h3 {
+    text-align: center;
+    font-size: 25px;
+    margin: 0 12px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card-content img {
+    height: 120px;
+    width: 120px;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.card-content p {
+    text-align: center;
+    padding: 15px;
+}
+
+.sponsor-section {
+    height: 210px;
+    background-color: white;
+
+}
+
+.sponsor-section h3 {
+    font-size: 36px;
+    font-family: 'Yeon Sung';
+    text-align: center;
+    padding-top: 12px;
+
+}
+
+.sponsor-section img {
+    border-radius: 10px;
+    width: 12%;
+    display: inline-block;
+    margin: 23px 20px;
+    height: 120px;
+}
+
+.sponsor-section div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.foot {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

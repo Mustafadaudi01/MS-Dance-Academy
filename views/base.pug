@@ -1,0 +1,26 @@
+doctype html
+html
+  head
+    title MS DANCE ACADEMY
+    block scripts
+    block style
+      
+  body
+    nav.navbar
+      ul
+        #logo
+          img(src="/static/images/mainlogo.png", alt="Main Logo")
+        li #[a(href="/") HOME]
+        li #[a(href="/services") SERVICES]
+        li #[a(href="/classinfo") CLASS INFO]
+        li #[a(href="/contact") CONTACT US]
+    .btns 
+      if page !== 'login' && page !== 'signup'
+      ul 
+        li: a#login-btn(href="/login") Login
+        li: a#signup-btn(href="/signup") SignUp
+
+    block content
+
+    footer.foot
+      | Copyright 2019 MS Dance Academy | All Rights Reserved

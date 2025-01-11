@@ -1,0 +1,32 @@
+/* contact form css */
+.form h1{
+    text-align: center;
+    margin: 5px;
+    padding: 10px;
+}
+.input{
+    width: 50%;
+    margin: 5px;
+    padding: 7px;
+    border-radius: 8px;
+    border: 1px solid black
+}
+.myform{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.textarea{
+    width: 50%;
+    padding: 7px;
+    margin: 5px;
+    border-radius: 8px;
+    border: 1px solid black
+}
+.btn{
+    margin: 7px 7px 30px 7px;
+    padding: 5px;
+    font-size: 15px;
+    border-radius: 5px;
+    width: 50%;
+}

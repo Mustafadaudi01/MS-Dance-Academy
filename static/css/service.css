@@ -1,0 +1,148 @@
+ #intro-section {
+     display: flex;
+     align-items: center;
+     /* Align content vertically */
+     justify-content: space-between;
+     /* Space between text and image */
+     padding: 20px;
+     gap: 20px;
+     /* Add space between the items */
+ }
+
+ .text-content {
+     flex: 1;
+     /* Take up available space */
+     text-align: left;
+     /* Align text to the left */
+     padding: 10px;
+ }
+
+ .text-content p {
+     font-size: 20px;
+     padding: 5px 5px 5px 0px;
+ }
+
+ .image-content {
+     flex: 1;
+     /* Take up equal space as text */
+     display: flex;
+     justify-content: center;
+     /* Center the image horizontally */
+     align-items: center;
+     /* Center the image vertically */
+ }
+
+ .image-content img {
+     max-width: 100%;
+     /* Make the image responsive */
+     height: 450px;
+     border-radius: 8px;
+     /* Optional: Add rounded corners */
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+     /* Optional: Add a subtle shadow */
+ }
+
+ @media (max-width: 768px) {
+     .content-image-section {
+         flex-direction: column;
+         /* Stack content vertically on smaller screens */
+         text-align: center;
+         /* Center-align text for smaller devices */
+     }
+
+     .text-content {
+         text-align: center;
+         /* Center text for mobile */
+     }
+
+     .image-content img {
+         width: 90%;
+         /* Shrink the image slightly for smaller devices */
+     }
+ }
+
+ /* css for list section */
+ #list-section {
+     display: flex;
+     text-align: center;
+     justify-content: space-evenly;
+     gap: 20px;
+     padding: 20px 0px;
+ }
+
+ .list {
+     display: flex;
+     flex-direction: column;
+ }
+
+ .list-img img {
+     height: 350px;
+     width: 254px;
+     border-radius: 5px;
+ }
+
+ .list-txt p {
+     font-size: 20px;
+     overflow-wrap: break-word;
+     text-align: justify;
+     padding: 10px 20px;
+ }
+
+ h3 {
+     margin-top: 10px;
+ }
+
+ .list-txt ul {
+     text-align: left;
+     padding: 10px 30px;
+ }
+
+ #quote-section {
+     height: 220px;
+     padding: 20px;
+     background-color: #f1f1f8;
+     margin: 20px 0;
+
+ }
+
+ .line h1 {
+     color: #406085;
+     text-align: center;
+   
+ }
+.line p{
+    font-size: 20px;
+    overflow-wrap: break-word;
+    padding: 10px 20px;
+    margin-top: 20px;
+}
+.btn{
+    padding: 5px;
+    font-size: 15px;
+    display: block;
+    margin: auto;
+    cursor: pointer;
+    background-color:#406085 ;
+    color: white;
+    border-radius: 5px;
+}
+
+
+
+ /* css for video content */
+ #video-section {
+     text-align: center;
+     padding: 20px;
+     background-color: #f9f9f9;
+     /* Optional background for the section */
+ }
+
+ video {
+     max-width: 38%;
+     /* Make the video responsive */
+     height: auto;
+     border-radius: 8px;
+     /* Optional: Add rounded corners */
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+     /* Optional: Add a shadow */
+ }

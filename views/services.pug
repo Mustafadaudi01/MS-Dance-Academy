@@ -1,0 +1,59 @@
+extends base.pug
+
+block style
+    style
+        include ../static/css/service.css
+        include ../static/css/style.css
+  
+block content 
+    #intro-section 
+        .text-content
+            h1 INTRODUCTION 
+            P At MS Dance Academy, we offer a wide variety of dance classes tailored to all ages and skill levels. Whether you’re a beginner or a seasoned dancer, we have something for everyone!
+            P "At MS Dance Academy, we believe every dancer is unique. Our expert instructors personalize each class to help students achieve their goals, whether they’re aiming for fitness, competition, or simply fun."e!
+        .image-content 
+            img(src="static/images/dance dp.png", alt="error", srcset="")
+    #quote-section
+        .line 
+            h1 WE SERVE YOU THE BEST SERVICE
+            p At MS Dance Academy, we are passionate about bringing rhythm and joy to your life with the best dance services. Whether you're a beginner taking your first step or an experienced dancer looking to refine your moves, we offer personalized training and expert guidance tailored to your needs. Our experienced instructors, vibrant community, and state-of-the-art facilities ensure an inspiring and supportive environment for you to unleash your inner dancer. Join us to experience the magic of dance and discover the best version of yourself!
+            button.btn JOIN US
+
+
+    section#list-section 
+        .list 
+            .list-img 
+                img(src="static/images/img grly 2.avif", alt="error", srcset="")
+            .list-txt
+                h3 Ballet: Graceful and classical techniques.
+                p Ballet is a classical dance form known for its precision, grace, and fluid movements. Dancers often perform to orchestral music, emphasizing balance, flexibility, and control.  
+                ul 
+                    li Pointe work (dancing on the tips of toes)
+                    li Pirouettes (spins)
+                    li Elegance and storytelling through movement 
+        .list 
+            .list-img 
+                img(src="static/images/img glry 1.avif", alt="error", srcset="")
+            .list-txt
+                h3 Hip-Hop: High-energy street style dance.
+                p  A high-energy dance style originating from street culture, hip-hop blends expressive movements, rhythm, and beats. It’s often performed to hip-hop, rap, or electronic music. 
+                ul 
+                    li Popping and locking
+                    li breakdancing
+                    li Freestyle inprovisation    
+        .list 
+            .list-img 
+                img(src="static/images/img grly 3.avif", alt="error", srcset="")
+            .list-txt
+                h3 Salsa: Passionate Latin moves. 
+                p A Latin American dance style that is both passionate and vibrant. It’s often performed in pairs, focusing on quick footwork and rhythmic body movements. 
+                ul 
+                    li spin and turns
+                    li partner based coreography
+                    li Music with afro-Cubon influences
+    section#video-section
+        h2 Watch Our Dance Performances
+        video(controls)
+        source(src="https://www.w3schools.com/html/mov_bbb.mp4", type="video/mp4")
+         
+         

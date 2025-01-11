@@ -1,0 +1,15 @@
+extends base.pug
+
+block style
+      link(rel="stylesheet", href="../static/css/style.css")
+      link(rel="stylesheet", href="../static/css/login.css")
+ 
+block content
+  section.container
+    #logo-login
+      img(src="/static/images/mainlogo.png", alt="Main Logo")
+    form(action="/login", method="POST", class="myform")
+      input(type="text" name="name" class="input" placeholder="Enter your username")
+      input(type="text" name="number" class="input" placeholder="Enter your password")
+      button(class="btn")
+        |login
