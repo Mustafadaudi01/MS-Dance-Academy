@@ -1,0 +1,384 @@
+<!DOCTYPE html><html><head><title>MS DANCE ACADEMY</title><style> #intro-section {
+     display: flex;
+     align-items: center;
+     /* Align content vertically */
+     justify-content: space-between;
+     /* Space between text and image */
+     padding: 20px;
+     gap: 20px;
+     /* Add space between the items */
+ }
+
+ .text-content {
+     flex: 1;
+     /* Take up available space */
+     text-align: left;
+     /* Align text to the left */
+     padding: 10px;
+ }
+
+ .text-content p {
+     font-size: 20px;
+     padding: 5px 5px 5px 0px;
+ }
+
+ .image-content {
+     flex: 1;
+     /* Take up equal space as text */
+     display: flex;
+     justify-content: center;
+     /* Center the image horizontally */
+     align-items: center;
+     /* Center the image vertically */
+ }
+
+ .image-content img {
+     max-width: 100%;
+     /* Make the image responsive */
+     height: 450px;
+     border-radius: 8px;
+     /* Optional: Add rounded corners */
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+     /* Optional: Add a subtle shadow */
+ }
+
+ @media (max-width: 768px) {
+     .content-image-section {
+         flex-direction: column;
+         /* Stack content vertically on smaller screens */
+         text-align: center;
+         /* Center-align text for smaller devices */
+     }
+
+     .text-content {
+         text-align: center;
+         /* Center text for mobile */
+     }
+
+     .image-content img {
+         width: 90%;
+         /* Shrink the image slightly for smaller devices */
+     }
+ }
+
+ /* css for list section */
+ #list-section {
+     display: flex;
+     text-align: center;
+     justify-content: space-evenly;
+     gap: 20px;
+     padding: 20px 0px;
+ }
+
+ .list {
+     display: flex;
+     flex-direction: column;
+ }
+
+ .list-img img {
+     height: 350px;
+     width: 254px;
+     border-radius: 5px;
+ }
+
+ .list-txt p {
+     font-size: 20px;
+     overflow-wrap: break-word;
+     text-align: justify;
+     padding: 10px 20px;
+ }
+
+ h3 {
+     margin-top: 10px;
+ }
+
+ .list-txt ul {
+     text-align: left;
+     padding: 10px 30px;
+ }
+
+ #quote-section {
+     height: 220px;
+     padding: 20px;
+     background-color: #f1f1f8;
+     margin: 20px 0;
+
+ }
+
+ .line h1 {
+     color: #406085;
+     text-align: center;
+   
+ }
+.line p{
+    font-size: 20px;
+    overflow-wrap: break-word;
+    padding: 10px 20px;
+    margin-top: 20px;
+}
+.btn{
+    padding: 5px;
+    font-size: 15px;
+    display: block;
+    margin: auto;
+    cursor: pointer;
+    background-color:#406085 ;
+    color: white;
+    border-radius: 5px;
+}
+
+
+
+ /* css for video content */
+ #video-section {
+     text-align: center;
+     padding: 20px;
+     background-color: #f9f9f9;
+     /* Optional background for the section */
+ }
+
+ video {
+     max-width: 38%;
+     /* Make the video responsive */
+     height: auto;
+     border-radius: 8px;
+     /* Optional: Add rounded corners */
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+     /* Optional: Add a shadow */
+ }* {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: black;
+    color: white;
+    padding: 8px;
+}
+
+.btns {
+    position: absolute;
+    right: 40px;
+    top: 15px;
+
+}
+
+.btns li {
+    padding: 5px;
+    font-size: 20px;
+    list-style: none;
+    margin: 5px;
+}
+
+.btns ul li a {
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+}
+
+.btns ul {
+    display: flex;
+}
+
+.btns ul li:hover {
+    background-color: gray;
+    border-radius: 8px;  
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 0 0px 10px;
+}
+
+#logo img {
+    height: 60px;
+    width: 60px;
+    border-radius: 30px;
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar ul li {
+    list-style: none;
+    padding: 19px 25px;
+    font-size: 18px;
+
+}
+
+.navbar ul li a:hover {
+    background-color: white;
+    color: #003049;
+    border-radius: 8px;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+}
+
+.main-section {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    font-size: 50px;
+    font-weight: bold;
+    color: black;
+    text-shadow: 2px 2px white;
+    overflow: hidden;
+}
+
+#search-container {
+    display: block;
+    margin: 0 auto;
+}
+
+#search-container input {
+
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 20px;
+
+}
+
+#search-container button {
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.main-section div {
+    margin-top: 70px;
+}
+
+#ex-small {
+    font-size: 20px;
+    text-align: center;
+    padding: 0 80px;
+    margin: 15px 100px;
+    overflow-wrap: break-word;
+}
+
+.main-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80%;
+    background: url(../images/bg1.jpeg.jpg)no-repeat center/cover;
+    z-index: -1;
+    /* Ensure it appears behind the text */
+    border-radius: 10px;
+    /* Optional: add rounded corners */
+    opacity: 0.7;
+    overflow: hidden;
+}
+
+#small {
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+
+.our-mission {
+    height: 400px;
+    background-color: white;
+    margin: 40px 0;
+
+
+}
+
+.our-mission h2 {
+    font-size: 36px;
+    font-family: 'Yeon Sung';
+    text-align: center;
+    padding-top: 12px;
+    margin-bottom: 20px;
+}
+
+
+.cards {
+    /* border: 2px solid black; */
+    border-radius: 10px;
+    width: 30%;
+    display: inline-block;
+    margin: 23px 20px;
+    height: 270px;
+    background-color: white;
+}
+
+.cards h3 {
+    text-align: center;
+    font-size: 25px;
+    margin: 0 12px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card-content img {
+    height: 120px;
+    width: 120px;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.card-content p {
+    text-align: center;
+    padding: 15px;
+}
+
+.sponsor-section {
+    height: 210px;
+    background-color: white;
+
+}
+
+.sponsor-section h3 {
+    font-size: 36px;
+    font-family: 'Yeon Sung';
+    text-align: center;
+    padding-top: 12px;
+
+}
+
+.sponsor-section img {
+    border-radius: 10px;
+    width: 12%;
+    display: inline-block;
+    margin: 23px 20px;
+    height: 120px;
+}
+
+.sponsor-section div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.foot {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}</style></head><body><nav class="navbar"><ul><div id="logo"><img src="/static/images/mainlogo.png" alt="Main Logo"></div><li><a href="/">HOME</a></li><li><a href="/services">SERVICES</a></li><li><a href="/classinfo">CLASS INFO</a></li><li><a href="/contact">CONTACT US</a></li></ul></nav><div class="btns"> <ul> <li><a id="login-btn" href="/login">Login</a></li><li><a id="signup-btn" href="/signup">SignUp</a></li></ul></div><div id="intro-section"> <div class="text-content"><h1>INTRODUCTION </h1><P>At MS Dance Academy, we offer a wide variety of dance classes tailored to all ages and skill levels. Whether you’re a beginner or a seasoned dancer, we have something for everyone!</P><P>"At MS Dance Academy, we believe every dancer is unique. Our expert instructors personalize each class to help students achieve their goals, whether they’re aiming for fitness, competition, or simply fun."e!</P></div><div class="image-content"> <img src="static/images/dance dp.png" alt="error" srcset=""></div></div><div id="quote-section"><div class="line"> <h1>WE SERVE YOU THE BEST SERVICE</h1><p>At MS Dance Academy, we are passionate about bringing rhythm and joy to your life with the best dance services. Whether you're a beginner taking your first step or an experienced dancer looking to refine your moves, we offer personalized training and expert guidance tailored to your needs. Our experienced instructors, vibrant community, and state-of-the-art facilities ensure an inspiring and supportive environment for you to unleash your inner dancer. Join us to experience the magic of dance and discover the best version of yourself!</p><button class="btn">JOIN US</button></div></div><section id="list-section"> <div class="list"> <div class="list-img"> <img src="static/images/img grly 2.avif" alt="error" srcset=""></div><div class="list-txt"><h3>Ballet: Graceful and classical techniques.</h3><p>Ballet is a classical dance form known for its precision, grace, and fluid movements. Dancers often perform to orchestral music, emphasizing balance, flexibility, and control.  </p><ul> <li>Pointe work (dancing on the tips of toes)</li><li>Pirouettes (spins)</li><li>Elegance and storytelling through movement </li></ul></div></div><div class="list"> <div class="list-img"> <img src="static/images/img glry 1.avif" alt="error" srcset=""></div><div class="list-txt"><h3>Hip-Hop: High-energy street style dance.</h3><p> A high-energy dance style originating from street culture, hip-hop blends expressive movements, rhythm, and beats. It’s often performed to hip-hop, rap, or electronic music. </p><ul> <li>Popping and locking</li><li>breakdancing</li><li>Freestyle inprovisation    </li></ul></div></div><div class="list"> <div class="list-img"> <img src="static/images/img grly 3.avif" alt="error" srcset=""></div><div class="list-txt"><h3>Salsa: Passionate Latin moves. </h3><p>A Latin American dance style that is both passionate and vibrant. It’s often performed in pairs, focusing on quick footwork and rhythmic body movements. </p><ul> <li>spin and turns</li><li>partner based coreography</li><li>Music with afro-Cubon influences</li></ul></div></div></section><section id="video-section"><h2>Watch Our Dance Performances</h2><video controls></video><source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4"></section><footer class="foot">Copyright 2019 MS Dance Academy | All Rights Reserved</footer></body></html>
