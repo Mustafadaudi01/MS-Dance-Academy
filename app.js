@@ -20,7 +20,7 @@ app.set('views', path.join(__dirname, 'views')); // Set the views directory
 
 // ENDPOINTS
 app.get('/', (req, res) => {
-  res.status(200).render('home.pug');
+  res.status(200).render('index.pug');
 });
 
 app.get("/contact", (req, res) => {
